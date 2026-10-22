@@ -16,18 +16,47 @@
 </head>
 <body>
 
-    <!-- Este contenedor "#app" es el lienzo donde el JS dibujará la web de cada cliente -->
+    <!-- Contenedor base de la aplicación -->
     <div id="app">
         <header id="global-header"></header>
         
         <main id="main-content">
-            <p>Cargando tu espacio personalizado...</p>
+            <!-- Esta sección se mostrará solo a los visitantes de la página principal -->
+            <div id="auth-container" class="auth-box">
+                <h2>Crea tu Espacio Inteligente</h2>
+                <p>Elige tu método de autenticación preferido para registrarte u obtener tu página web personalizada.</p>
+                
+                <!-- Botones de Autenticación Social (OAuth 2.0) -->
+                <div class="oauth-buttons">
+                    <button id="btn-google" class="btn btn-google">
+                        <span>Iniciar sesión con Google</span>
+                    </button>
+                    <button id="btn-facebook" class="btn btn-facebook">
+                        <span>Iniciar sesión con Facebook</span>
+                    </button>
+                </div>
+
+                <div class="divider"><span>o también puedes</span></div>
+
+                <!-- Formulario de Simulación Técnica de Registro -->
+                <form id="registro-simulado-form" class="registro-form">
+                    <div class="form-group">
+                        <label for="reg-nombre">Nombre Comercial o de Usuario:</label>
+                        <input type="text" id="reg-nombre" placeholder="Ej. Carlos Diseños" required>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Crear Estructura Virtual</button>
+                </form>
+            </div>
+
+            <!-- Contenedor dinámico secundario para pintar los perfiles de los clientes -->
+            <div id="cliente-container" style="display: none;"></div>
         </main>
         
         <footer id="global-footer"></footer>
     </div>
 
-    <!-- El motor JS inteligente que se encargará de buscar las carpetas de los usuarios -->
+    <!-- El motor JS inteligente -->
     <script src="assets/js/router.js" type="module"></script>
 </body>
 </html>
+
