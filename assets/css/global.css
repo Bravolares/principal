@@ -20,7 +20,7 @@ body {
     justify-content: space-between;
 }
 
-/* Encabezado y Pie de página comunes para todos */
+/* Encabezado y Pie de página comunes */
 #global-header {
     background-color: #ffffff;
     padding: 1rem 2rem;
@@ -43,4 +43,130 @@ body {
     text-align: center;
     padding: 1rem;
     font-size: 0.85rem;
+}
+
+/* --- NUEVOS ESTILOS: CAJA DE AUTENTICACIÓN Y REGISTRO --- */
+
+.auth-box {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+}
+
+.auth-box h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: #1d1d1f;
+}
+
+.auth-box p {
+    font-size: 0.95rem;
+    color: #86868b;
+    margin-bottom: 2rem;
+}
+
+/* Botones Base */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-bottom: 0.75rem;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Botones de Proveedores de Identidad (Colores de marca) */
+.btn-google {
+    background-color: #ffffff;
+    color: #3c4043;
+    border: 1px solid #dadce0;
+}
+
+.btn-google:hover {
+    background-color: #f8f9fa;
+}
+
+.btn-facebook {
+    background-color: #1877f2;
+    color: #ffffff;
+}
+
+.btn-facebook:hover {
+    background-color: #166fe5;
+}
+
+/* Divisor Visual */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #86868b;
+    font-size: 0.85rem;
+    margin: 1.5rem 0;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e5e5ea;
+}
+
+.divider span {
+    padding: 0 0.75rem;
+}
+
+/* Formulario */
+.registro-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #515154;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #d2d2d7;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #0071e3;
+}
+
+.btn-submit {
+    background-color: #0071e3;
+    color: #ffffff;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.btn-submit:hover {
+    background-color: #0077ed;
 }
