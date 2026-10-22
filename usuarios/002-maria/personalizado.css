@@ -1,0 +1,30 @@
+/* Estilos únicos e individuales para la página de María */
+
+body {
+    /* Cambiamos el fondo por un tono cálido y esmeralda exclusivo para María */
+    background-color: #f6fbf9; 
+}
+
+.perfil-cliente {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 20px; /* Bordes más redondeados para su diseño */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+    border-top: 5px solid #7928ca; /* Línea morada distintiva de su marca */
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.perfil-cliente h2 {
+    color: #7928ca;
+    margin-bottom: 1rem;
+    font-size: 1.9rem;
+}
+
+.perfil-cliente .descripcion {
+    color: #0070f3; /* Texto secundario en azul para hacer contraste */
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}

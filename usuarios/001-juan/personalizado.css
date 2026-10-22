@@ -1,0 +1,30 @@
+/* Estilos únicos e individuales para la página de Juan */
+
+body {
+    /* Cambiamos el fondo gris global por un tono azul claro exclusivo para Juan */
+    background-color: #eef2f7; 
+}
+
+.perfil-cliente {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid #0070f3; /* Línea azul distintiva de su marca */
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.perfil-cliente h2 {
+    color: #0070f3;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.perfil-cliente .descripcion {
+    color: #444444;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}

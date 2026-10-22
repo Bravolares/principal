@@ -1,0 +1,10 @@
+{
+  "nombrePlataforma": "Sistema Web Inteligente",
+  "version": "1.0.0",
+  "estado": "desarrollo",
+  "permitirRegistroSocial": true,
+  "redesSocialesGlobales": {
+    "facebook": "https://facebook.com",
+    "instagram": "https://instagram.com"
+  }
+}

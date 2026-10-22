@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Inteligente Dinámica</title>
+    
+    <!-- Vinculación de los estilos globales compartidos -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    
+    <!-- Estilo temporal para evitar el parpadeo visual antes de cargar al usuario -->
+    <style>
+        #app { opacity: 0; transition: opacity 0.3s ease; }
+        #app.ready { opacity: 1; }
+    </style>
+</head>
+<body>
+
+    <!-- Este contenedor "#app" es el lienzo donde el JS dibujará la web de cada cliente -->
+    <div id="app">
+        <header id="global-header"></header>
+        
+        <main id="main-content">
+            <p>Cargando tu espacio personalizado...</p>
+        </main>
+        
+        <footer id="global-footer"></footer>
+    </div>
+
+    <!-- El motor JS inteligente que se encargará de buscar las carpetas de los usuarios -->
+    <script src="assets/js/router.js" type="module"></script>
+</body>
+</html>
